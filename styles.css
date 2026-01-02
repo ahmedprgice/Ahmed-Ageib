@@ -1119,9 +1119,23 @@ body {
    CONTACT
    =============================== */
 @media (max-width: 768px) {
-  .contact-cards {
-    grid-template-columns: 1fr;
+  .contact-card {
+    padding: 17px;
   }
+  .contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+ 
+  .contact-card h4 {
+    font-size: 13px;
+  }
+
+  .contact-card span {
+    font-size: 12px;
+  }
+
+
 
   .contact-form {
     padding: 24px;
